@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Bu dialog penceresini beğendiniz mi?" />
+
+    <Button
+        android:text="HAYIR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnHayir" />
+
+    <Button
+        android:text="EVET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEvet"
+        android:layout_alignBaseline="@+id/btnHayir"
+        android:layout_alignBottom="@+id/btnHayir"
+        android:layout_toEndOf="@+id/btnHayir"
+        android:layout_marginStart="18dp" />
+</RelativeLayout>
